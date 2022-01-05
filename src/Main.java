@@ -1,6 +1,7 @@
 import Chapter2Object.Base.OuterClass;
 import Chapter2Object.Base.Person;
 import Chapter2Object.Base.Student;
+import Chapter2Object.Core.MyEnum;
 import Chapter2Object.Core.MyStringBuilder;
 import Chapter2Object.Core.MyStringJoiner;
 
@@ -24,8 +25,11 @@ public class Main {
 //        MyStringBuilder msb = new MyStringBuilder();
 
         // 4. StringJoiner
-        MyStringJoiner msj = new MyStringJoiner();
-        msj.stringJoinerTest();
+//        MyStringJoiner msj = new MyStringJoiner();
+//        msj.stringJoinerTest();
 
+        //5. Enum
+        MyEnum myEnum = new MyEnum();
+        myEnum.myEnumTest();
     }
 }
