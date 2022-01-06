@@ -4,6 +4,7 @@ import Chapter2Object.Base.Student;
 import Chapter2Object.Core.MyEnum;
 import Chapter2Object.Core.MyStringBuilder;
 import Chapter2Object.Core.MyStringJoiner;
+import Chapter2Object.Core.MyUtils;
 
 public class Main {
     public static void main(String[] args){
@@ -29,7 +30,13 @@ public class Main {
 //        msj.stringJoinerTest();
 
         //5. Enum
-        MyEnum myEnum = new MyEnum();
-        myEnum.myEnumTest();
+//        MyEnum myEnum = new MyEnum();
+//        myEnum.myEnumTest();
+
+        // 6. Utils
+        MyUtils myUtils = new MyUtils();
+        myUtils.myUtilsTest();
+
+
     }
 }
