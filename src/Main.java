@@ -5,10 +5,13 @@ import Chapter2Object.Core.MyEnum;
 import Chapter2Object.Core.MyStringBuilder;
 import Chapter2Object.Core.MyStringJoiner;
 import Chapter2Object.Core.MyUtils;
+import Chapter3Exception.myException;
+import Chapter3Exception.myLogging;
 
 public class Main {
     public static void main(String[] args){
-        Chapter2();
+//        Chapter2();
+        Chapter3();
     }
 
     private static void Chapter2(){
@@ -36,7 +39,15 @@ public class Main {
         // 6. Utils
         MyUtils myUtils = new MyUtils();
         myUtils.myUtilsTest();
+    }
 
+    private static void Chapter3(){
+//       myException me = new myException();
+//       me.myExceptionTest();
+//       me.myExceptionTest2();
+
+        myLogging ml = new myLogging();
+        ml.myLogginTest();
 
     }
 }
