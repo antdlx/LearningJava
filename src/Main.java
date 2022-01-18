@@ -7,11 +7,13 @@ import Chapter2Object.Core.MyStringJoiner;
 import Chapter2Object.Core.MyUtils;
 import Chapter3Exception.myException;
 import Chapter3Exception.myLogging;
+import Chapter4Reflection.myClass;
 
 public class Main {
     public static void main(String[] args){
 //        Chapter2();
-        Chapter3();
+//        Chapter3();
+        Chapter4();
     }
 
     private static void Chapter2(){
@@ -50,4 +52,12 @@ public class Main {
         ml.myLogginTest();
 
     }
+
+    private static void Chapter4(){
+        myClass mc = new myClass();
+        mc.getClassTest();
+        mc.differenceBetweenClassAndInstanceOf();
+    }
+
+
 }
