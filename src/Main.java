@@ -8,6 +8,7 @@ import Chapter2Object.Core.MyUtils;
 import Chapter3Exception.myException;
 import Chapter3Exception.myLogging;
 import Chapter4Reflection.myClass;
+import Chapter4Reflection.myField;
 
 public class Main {
     public static void main(String[] args){
@@ -54,9 +55,13 @@ public class Main {
     }
 
     private static void Chapter4(){
-        myClass mc = new myClass();
-        mc.getClassTest();
-        mc.differenceBetweenClassAndInstanceOf();
+//        myClass mc = new myClass();
+//        mc.getClassTest();
+//        mc.differenceBetweenClassAndInstanceOf();
+
+        myField mf = new myField();
+        mf.myFieldTest();
+        mf.getFieldValueTest();
     }
 
 
