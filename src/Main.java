@@ -9,6 +9,7 @@ import Chapter3Exception.myException;
 import Chapter3Exception.myLogging;
 import Chapter4Reflection.myClass;
 import Chapter4Reflection.myField;
+import Chapter4Reflection.myFunction;
 
 public class Main {
     public static void main(String[] args){
@@ -59,9 +60,12 @@ public class Main {
 //        mc.getClassTest();
 //        mc.differenceBetweenClassAndInstanceOf();
 
-        myField mf = new myField();
-        mf.myFieldTest();
-        mf.getFieldValueTest();
+//        myField mf = new myField();
+//        mf.myFieldTest();
+//        mf.getFieldValueTest();
+
+        myFunction mf = new myFunction();
+        mf.myFunctionTest();
     }
 
 
