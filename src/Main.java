@@ -8,6 +8,7 @@ import Chapter2Object.Core.MyUtils;
 import Chapter3Exception.myException;
 import Chapter3Exception.myLogging;
 import Chapter4Reflection.myClass;
+import Chapter4Reflection.myDynamicProxy;
 import Chapter4Reflection.myField;
 import Chapter4Reflection.myFunction;
 
@@ -64,8 +65,11 @@ public class Main {
 //        mf.myFieldTest();
 //        mf.getFieldValueTest();
 
-        myFunction mf = new myFunction();
-        mf.myFunctionTest();
+//        myFunction mf = new myFunction();
+//        mf.myFunctionTest();
+
+        myDynamicProxy md = new myDynamicProxy();
+        md.dynamicProxyTest();
     }
 
 
