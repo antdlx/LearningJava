@@ -23,6 +23,15 @@ public class myFunction {
             System.out.println(res);
 
             // 私有方法调用
+//            method = student.getClass().getDeclaredMethod("getGrade", Integer.class);
+//            method.setAccessible(true);
+//            method.invoke(student,999);
+//            System.out.println(student.grade);
+
+            // 多态
+            method = Person.class.getMethod("hello");
+            method.invoke(student);
+
 
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
@@ -31,11 +40,16 @@ public class myFunction {
     }
 
     class Student extends Person{
+        int grade;
         public int getAge(int age){
             return age;
         }
         private int getGrade(int grade){
+            this.grade = grade;
             return grade;
+        }
+        public void hello(){
+            System.out.println("hello Student");
         }
     }
 
@@ -45,6 +59,9 @@ public class myFunction {
         }
         protected String getSex(){
             return "male";
+        }
+        public void hello(){
+            System.out.println("hello Person");
         }
     }
 }
