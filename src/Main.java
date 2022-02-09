@@ -8,12 +8,14 @@ import Chapter2Object.Core.MyUtils;
 import Chapter3Exception.myException;
 import Chapter3Exception.myLogging;
 import Chapter4Reflection.*;
+import Chapter6Generic.myGeneric;
 
 public class Main {
     public static void main(String[] args){
 //        Chapter2();
 //        Chapter3();
-        Chapter4();
+//        Chapter4();
+        Chapter6();
     }
 
     private static void Chapter2(){
@@ -72,5 +74,9 @@ public class Main {
         tir.testThinkingInReflection();
     }
 
+    private static void Chapter6(){
+        myGeneric mg = new myGeneric();
+        mg.testMyGeneric();
+    }
 
 }
