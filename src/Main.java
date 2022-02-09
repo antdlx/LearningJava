@@ -7,10 +7,7 @@ import Chapter2Object.Core.MyStringJoiner;
 import Chapter2Object.Core.MyUtils;
 import Chapter3Exception.myException;
 import Chapter3Exception.myLogging;
-import Chapter4Reflection.myClass;
-import Chapter4Reflection.myDynamicProxy;
-import Chapter4Reflection.myField;
-import Chapter4Reflection.myFunction;
+import Chapter4Reflection.*;
 
 public class Main {
     public static void main(String[] args){
@@ -68,8 +65,11 @@ public class Main {
 //        myFunction mf = new myFunction();
 //        mf.myFunctionTest();
 
-        myDynamicProxy md = new myDynamicProxy();
-        md.dynamicProxyTest();
+//        myDynamicProxy md = new myDynamicProxy();
+//        md.dynamicProxyTest();
+
+        thinkingInReflection tir = new thinkingInReflection();
+        tir.testThinkingInReflection();
     }
 
 
