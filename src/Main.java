@@ -9,13 +9,15 @@ import Chapter3Exception.myException;
 import Chapter3Exception.myLogging;
 import Chapter4Reflection.*;
 import Chapter6Generic.myGeneric;
+import Chapter7Collection.myCollections;
 
 public class Main {
     public static void main(String[] args){
 //        Chapter2();
 //        Chapter3();
 //        Chapter4();
-        Chapter6();
+//        Chapter6();
+        Chapter7();
     }
 
     private static void Chapter2(){
@@ -77,6 +79,12 @@ public class Main {
     private static void Chapter6(){
         myGeneric mg = new myGeneric();
         mg.testMyGeneric();
+    }
+
+    private static void Chapter7(){
+        myCollections mc = new myCollections();
+        mc.testEnumMap();
+        mc.testTreeMap();
     }
 
 }
