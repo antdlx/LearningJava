@@ -1,10 +1,9 @@
 package Chapter7Collection;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.DayOfWeek;
-import java.util.Comparator;
-import java.util.EnumMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class myCollections {
 
@@ -41,8 +40,38 @@ public class myCollections {
 
     public void testProperties(){
 
+        try {
+            Properties p = new Properties();
+            p.load(new FileInputStream("/Users/dinglongxiang/Codes/Java/JavaSpace/LearningJava/src/Chapter7Collection/Chapter7.properties"));
+
+            String param1 = p.getProperty("param1");
+            // 都是String类型的，即便是数字
+            String param2 = p.getProperty("param2");
+            System.out.println(param1);
+            System.out.println(param2);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
+    public void testQueue(){
+        PriorityQueue<User> pq = new PriorityQueue<>(new myComparator());
+        pq.add(new User("a",9));
+        pq.add(new User("b",4));
+        pq.add(new User("c",8));
+        System.out.println(pq.poll().name);
+        System.out.println(pq.poll().name);
+        System.out.println(pq.poll().name);
+    }
+
+}
+
+class myComparator implements Comparator<User>{
+    @Override
+    public int compare(User o1, User o2) {
+        return Integer.compare(o1.grade, o2.grade);
+    }
 }
 
 class Person{
@@ -51,4 +80,13 @@ class Person{
         this.name = name;
     }
 
+}
+
+class User{
+    public String name;
+    public int grade;
+    public User(String name, int grade){
+        this.name = name;
+        this.grade = grade;
+    }
 }

@@ -85,6 +85,8 @@ public class Main {
         myCollections mc = new myCollections();
         mc.testEnumMap();
         mc.testTreeMap();
+        mc.testProperties();
+        mc.testQueue();
     }
 
 }
