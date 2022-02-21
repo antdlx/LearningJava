@@ -1,3 +1,4 @@
+import Chapter13MultiThread.myThread;
 import Chapter2Object.Base.OuterClass;
 import Chapter2Object.Base.Person;
 import Chapter2Object.Base.Student;
@@ -17,7 +18,8 @@ public class Main {
 //        Chapter3();
 //        Chapter4();
 //        Chapter6();
-        Chapter7();
+//        Chapter7();
+        Chapter13();
     }
 
     private static void Chapter2(){
@@ -87,6 +89,14 @@ public class Main {
         mc.testTreeMap();
         mc.testProperties();
         mc.testQueue();
+    }
+
+    private static void Chapter13(){
+        myThread mt = new myThread();
+        mt.testEstimateThread();
+        mt.testJoin();
+        mt.testInterrupt();
+        mt.testFlag();
     }
 
 }
