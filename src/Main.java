@@ -1,4 +1,5 @@
 import Chapter13MultiThread.myThread;
+import Chapter13MultiThread.myThreadSynchronize;
 import Chapter2Object.Base.OuterClass;
 import Chapter2Object.Base.Person;
 import Chapter2Object.Base.Student;
@@ -92,11 +93,14 @@ public class Main {
     }
 
     private static void Chapter13(){
-        myThread mt = new myThread();
-        mt.testEstimateThread();
-        mt.testJoin();
-        mt.testInterrupt();
-        mt.testFlag();
+//        myThread mt = new myThread();
+//        mt.testEstimateThread();
+//        mt.testJoin();
+//        mt.testInterrupt();
+//        mt.testFlag();
+
+        myThreadSynchronize mts = new myThreadSynchronize();
+        mts.badCase();
     }
 
 }
